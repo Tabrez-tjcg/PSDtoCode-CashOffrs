@@ -1,0 +1,59 @@
+
+/* FONTS */
+@font-face {
+    font-family: 'Corporative-Black-Extra';
+    src: url('/assets/fonts/Corporative-Black-Extra.otf');
+}
+
+@font-face {
+    font-family: 'Corporative-Black-Italic';
+    src: url('/assets/fonts/Corporative-Black-Italic.ttf');
+}
+@font-face {
+    font-family: 'Corporative-Black';
+    src: url('/assets/fonts/Corporative-Black.ttf');
+}
+@font-face {
+    font-family: 'Corporative-Bold-Italic';
+    src: url('/assets/fonts/Corporative-Bold-Italic.ttf');
+}
+@font-face {
+    font-family: 'Corporative-Book';
+    src: url('/assets/fonts/Corporative-Book.ttf');
+}
+@font-face {
+    font-family: 'Corporative-Italic';
+    src: url('/assets/fonts/Corporative-Italic.ttf');
+}
+@font-face {
+    font-family: 'Corporative-Regular-Italic';
+    src: url('/assets/fonts/Corporative-Regular-Italic.ttf');
+}
+@font-face {
+    font-family: 'Corporative-Regular';
+    src: url('/assets/fonts/Corporative-Regular.ttf');
+}
+  
+  
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --primary-color: #264c84;
+    --secondary-color: #63bbf6;
+    --bg-color: #f2f5f8;
+}
+
+body{
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+
+/* HOMEPAGE */
+
+h1{
+    font-family: 'Corporative-Black';
+    text-align: center;
+}
