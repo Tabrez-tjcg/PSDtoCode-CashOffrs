@@ -50,6 +50,7 @@ body{
     font-family: 'Corporative-Regular';
     font-weight: 500;
     font-size: 1.2vw;
+    letter-spacing: 0.05vw;
 }
 a{
     text-decoration: none;
@@ -64,13 +65,19 @@ section{
     padding: 5vw 0;
 }
 .px-28vw{
-    padding: 0 28vw;
+    padding: 0 25vw;
 }
 .m-0{
     margin: 0 !important;
 }
 .flex-col{
     flex-direction: column;
+}
+button, a{
+    cursor: pointer;
+}
+.btn{
+    font-size: 1.2vw;
 }
 /* HOMEPAGE */
 
@@ -85,6 +92,10 @@ section{
     /* background-image: url(/assets/images/header-bg.png);
     background-repeat: no-repeat;
     background-size: contain; */
+}
+
+.hero-section{
+    background-color: var(--bg-color);
 }
 .header {
     display: flex;
@@ -114,8 +125,8 @@ ul{
     display: flex;
 }
 .nav .nav-links{
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 1.2vw;
+    margin-right:1.2vw;
     font-size: 1.1vw;
 }
 .nav .nav-links a{
@@ -123,6 +134,9 @@ ul{
     color: #000;
     font-family: 'Corporative-Book';
     font-weight: 500;
+}
+.nav .nav-links a:hover{
+    color: var(--secondary-color);
 }
 .nav .nav-links.active a{
     color: var(--secondary-color);
@@ -293,11 +307,22 @@ ul{
     display: none;
 }
 
+.steps {
+    margin-left: -7vw;
+}
+#navigations .btn{
+    padding: 0.7vw 1.2vw;
+    font-size: 1vw;
+}
+
 /* Responsive */
 
 @media (max-width: 900px) {
     .container {
         padding: 0 2vw;
+    }
+    .header{
+        padding: 3.5vw 2vw;
     }
     .header .logo-img {
         max-width: 30vw;
@@ -333,8 +358,9 @@ ul{
         width: 55vw;
         height: 66vw;
         position: absolute;
-        top: 16vw;
+        top: 13vw;
         right: 4vw;
+        z-index: 1;
     }
 
     /* .navigations.active .nav{
@@ -397,6 +423,7 @@ ul{
     .cta-btns .center-it button{
         margin-left: 1vw;
         margin-right: 1vw;
+        font-size: 3vw;
     }
 
     .header + .title {
@@ -420,7 +447,7 @@ ul{
         margin-top: 2.2vw;
     }
     .search-input input {
-        height: 10vw;
+        height: auto;   
     }
     .btn {
         padding: 1.5vw 2.5vw;
@@ -430,6 +457,12 @@ ul{
         border-radius: 10vw;
         padding: 0.5vw;
     }
+    .btn {
+        font-size: 3vw;
+    }
+    .no-matter .btn {
+        padding: 0.8vw 3vw;
+    }
 
 }
 
@@ -438,7 +471,7 @@ ul{
 /* How to Sell */
 .how-to-sell {
     position: relative;
-    margin-top: 12vw;
+    /* margin-top: 12vw; */
     background-color: #f2f5f8;
 }
 
@@ -448,6 +481,7 @@ ul{
     font-weight: 100;
     color: var(--primary-color);
     text-align: center;
+    text-transform: capitalize;
 }
 
 .section-title strong{
@@ -455,7 +489,8 @@ ul{
 }
 
 .how-to-sell .section-title::after,
-.no-matter .section-title::after{
+.no-matter .section-title::after,
+.testimonials .section-title::after{
     content: '';
     width: 3vw;
     height: auto;
@@ -530,11 +565,12 @@ ul{
 
 
 .bottom-text {
-    font-size: 1.5vw;
+    font-size: 1.6vw;
     font-weight: 900;
     margin: 1.5vw 0;
     line-height: 1.5;
 }
+
 
 .how-to-sell .btn{
     margin: 0 1vw;
@@ -543,9 +579,6 @@ ul{
     font-size: 1.2vw;
 }
 
-.btn{
-    font-size: 1.2vw;
-}
 .no-matter{
     position: relative;
 }
@@ -672,5 +705,54 @@ ul{
     .no-matter .btn{
         padding-top: 0.6vw;
         padding-bottom: 0.6vw;
+    }
+    .section-title {
+        font-size: 3.5vw;
+    }
+    .step {
+        margin-top: 3.5vw;
+        margin-bottom: 3vw;
+        width: 45vw;
+    }
+    .steps .step p {
+        font-size: 2.5vw;
+        width: 32vw;
+        line-height: 1.2;
+    }
+    .step::after {
+        min-width: max-content;
+        height: auto;
+        position: relative;
+        top: -4.6vw;
+        left: -38vw;
+        font-size: 2vw;
+    }
+    .how-to-sell-content {
+        padding-left: 12vw;
+    }
+    .px-28vw {
+        padding: 0 10vw;
+    }
+    .bottom-text {
+        font-size: 2.5vw;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+    .circular-list-name {
+        font-size: 2.5vw;
+    }
+    .search-input input::placeholder{ 
+        font-size: 2.5vw;
+    }
+    .how-to-sell .btn { 
+        font-size: 3vw;
+    }
+    .how-to-sell .section-title::after, .no-matter .section-title::after{
+        content: '';
+        top: 11vw;
+    }
+    .no-matter .section-title::after{
+        content: '';
+        top: 16vw;
     }
 }
