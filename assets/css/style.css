@@ -2,36 +2,36 @@
 /* FONTS */
 @font-face {
     font-family: 'Corporative-Black-Extra';
-    src: url('/assets/fonts/Corporative-Black-Extra.otf');
+    src: url('../fonts/Corporative-Black-Extra.otf');
 }
 
 @font-face {
     font-family: 'Corporative-Black-Italic';
-    src: url('/assets/fonts/Corporative-Black-Italic.ttf');
+    src: url('../fonts/Corporative-Black-Italic.ttf');
 }
 @font-face {
     font-family: 'Corporative-Black';
-    src: url('/assets/fonts/Corporative-Black.ttf');
+    src: url('../fonts/Corporative-Black.ttf');
 }
 @font-face {
     font-family: 'Corporative-Bold-Italic';
-    src: url('/assets/fonts/Corporative-Bold-Italic.ttf');
+    src: url('../fonts/Corporative-Bold-Italic.ttf');
 }
 @font-face {
     font-family: 'Corporative-Book';
-    src: url('/assets/fonts/Corporative-Book.ttf');
+    src: url('../fonts/Corporative-Book.ttf');
 }
 @font-face {
     font-family: 'Corporative-Italic';
-    src: url('/assets/fonts/Corporative-Italic.ttf');
+    src: url('../fonts/Corporative-Italic.ttf');
 }
 @font-face {
     font-family: 'Corporative-Regular-Italic';
-    src: url('/assets/fonts/Corporative-Regular-Italic.ttf');
+    src: url('../fonts/Corporative-Regular-Italic.ttf');
 }
 @font-face {
     font-family: 'Corporative-Regular';
-    src: url('/assets/fonts/Corporative-Regular.ttf');
+    src: url('../fonts/Corporative-Regular.ttf');
 }
   
   
@@ -89,7 +89,7 @@ button, a{
 .hero-section{
     width: 100%;
     height: auto;
-    /* background-image: url(/assets/images/header-bg.png);
+    /* background-image: url("../images/header-bg.png);
     background-repeat: no-repeat;
     background-size: contain; */
 }
@@ -264,7 +264,7 @@ ul{
 .home-bg-img {
     width: 100%;
     height: 25vw;
-    background-image: url(/assets/images/home-bg-img.png);
+    background-image: url("../images/home-bg-img.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -279,7 +279,7 @@ ul{
     content: '';
     width: 100%;
     height: auto;   
-    background-image: url(/assets/images/header-bg.png);
+    background-image: url("../images/header-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -290,7 +290,7 @@ ul{
     content: '';
     width: 100%;
     height: 100vw;
-    background-image: url(/assets/images/header-bg.png);
+    background-image: url("../images/header-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -318,6 +318,14 @@ ul{
 /* Responsive */
 
 @media (max-width: 900px) {
+
+    .devider-line{
+        position: relative;
+        top: -7vw;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
     .container {
         padding: 0 2vw;
     }
@@ -355,8 +363,8 @@ ul{
         border-radius: 2vw;
         background-color: #fff;
         border: 0.3vw solid #ccc;
-        width: 55vw;
-        height: 66vw;
+        width: 40vw;
+        height: 53vw;
         position: absolute;
         top: 13vw;
         right: 4vw;
@@ -397,7 +405,7 @@ ul{
     }
 
     .navigations.active .nav a{
-        font-size: 5vw;
+        font-size: 3.5vw;
     }
     /* .navigations.active .cta-btns {
         position: absolute;
@@ -407,7 +415,7 @@ ul{
 
     .navigations.active .cta-btns {
         position: relative;
-        top: 6vw;
+        top: -6vw;
         left: 0vw;
     }
     .cta-btns{
@@ -420,10 +428,11 @@ ul{
         font-size: 3vw;
         margin: 2vw 0 3vw 0;
     }
-    .cta-btns .center-it button{
+    #navigations .center-it button{
         margin-left: 1vw;
         margin-right: 1vw;
-        font-size: 3vw;
+        font-size: 2.5vw;
+        padding: 1.5vw 2vw;
     }
 
     .header + .title {
@@ -446,9 +455,9 @@ ul{
         width: 70vw;
         margin-top: 2.2vw;
     }
-    .search-input input {
-        height: auto;   
-    }
+    /* .search-input input {
+        height: 100%;
+    } */
     .btn {
         padding: 1.5vw 2.5vw;
         border-radius: 5vw;
@@ -520,6 +529,7 @@ ul{
     align-items: flex-start;
     list-style: none;
     flex-direction: column;
+    white-space: nowrap;
 }
 
 .step{
@@ -688,7 +698,7 @@ ul{
 }
 
 .half-circle {
-    background-image: url(/assets/images/Ellipse.png);
+    background-image: url("../images/Ellipse.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -703,8 +713,7 @@ ul{
 /* Responsive */
 @media (max-width:900px) {
     .no-matter .btn{
-        padding-top: 0.6vw;
-        padding-bottom: 0.6vw;
+        padding: 1.2vw 2vw;
     }
     .section-title {
         font-size: 3.5vw;
@@ -715,7 +724,7 @@ ul{
         width: 45vw;
     }
     .steps .step p {
-        font-size: 2.5vw;
+        font-size: 2.3vw;
         width: 32vw;
         line-height: 1.2;
     }
@@ -744,8 +753,8 @@ ul{
     .search-input input::placeholder{ 
         font-size: 2.5vw;
     }
-    .how-to-sell .btn { 
-        font-size: 3vw;
+    .how-to-sell .btn, .no-matter .btn { 
+        font-size: 2.5vw;
     }
     .how-to-sell .section-title::after, .no-matter .section-title::after{
         content: '';
@@ -755,4 +764,53 @@ ul{
         content: '';
         top: 16vw;
     }
+    .how-to-sell-content {
+        /* padding-left: unset; */
+        padding-right: unset;
+        margin: 0 auto;
+    }
+}
+
+
+@media (width: 768px) {
+    #navigations .center-it button {
+        padding: 1.2vw 2vw;
+        margin-top: 1.2vw;
+    }
+   button {
+        font-size: 2.2vw !important;
+        padding: 1.2vw;
+    }
+    .navigations.active .nav a {
+        font-size: 3vw;
+    }
+    .cta-btns .contact a {
+        font-size: 2vw;
+        margin: 2vw 0 2vw 0;
+    }
+
+    .devider-line {
+        top: -11vw;
+    }
+    .navigations.active .cta-btns {
+        top: -10vw;
+    }
+    #navigations {
+        width: 34vw;
+        height: 45vw;
+    }
+    .how-to-sell-content {
+        padding-left: unset;
+        margin: 0 auto;
+    }
+    
+}
+
+@media (max-width: 250px) {
+    .search-input input::placeholder{ 
+        font-size: 3vw;
+    }
+    .search-input input {
+        height: 5vw;
+    }   
 }
